@@ -1,0 +1,12 @@
+arch:
+  - arm64
+
+os: linux
+
+services:
+  - docker
+
+script:
+  - echo "Hello world"
+  - uname -a
+  - docker run --rm -it arm64v8/ubuntu sh -c "echo test; uname -a"
