@@ -9,4 +9,4 @@ services:
 script:
   - echo "Hello world"
   - uname -a
-  - docker run --rm -it arm64v8/ubuntu sh -c "echo test; uname -a"
+  - docker run --rm -i arm64v8/ubuntu sh -c "echo test; uname -a"
